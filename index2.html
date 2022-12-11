@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+ 
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!------Viewport------>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------Lien CSS------->
+    <link rel="stylesheet" href="./stylesheet2.css">
+    <!------Fonts---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Allura&family=Cookie&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Great+Vibes&family=Kalam:wght@300&family=La+Belle+Aurore&family=Neucha&family=PT+Serif:ital@1&family=Patrick+Hand&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+   
+   <!------Icônes----------->
+   <link rel="stylesheet" href=https://unpkg.com/boxicons@latest/css/boxicons.min.css>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+   <!---Icônes Bootstrap----->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <title>Le Pavillon</title>
+</head>
+
+<body>
+<!--------BARRE DE NAVIGATION-------->
+<header>
+    <div class="nav container">
+        <a href="#" class="logo">Le Pavillon</a>
+        
+        <!------Icône panier--------->
+        <i class='bi bi-cart3' id="cart-icon"></i> <!---icone panier2 :'bx bx-cart-add'-->
+         
+        <!-------Compter articles dans panier-----
+         <div class="cartAmount">0</div>---->
+        
+         <!----panier----->
+        <div class="cart">
+            <h2 class="cart-title">Votre Panier</h2>
+            
+            <!-----contenu----->
+            <div class="cart-content">
+                
+
+                </div>
+                <!-------Total----------->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">0€</div>
+                    </div>
+    
+                <!------Button achat--------->
+                <button type="button" class="btn-reserver">Acheter</button>
+                <!------Fermer panier-------->
+                <i class='bx bx-x' id="close-cart"></i>
+        </div>
+
+    </div>
+</header>
+
+<!---------MENU----------->
+
+<section class="shop container">
+    <h2 class="section-title">Composez votre menu</h2>
+    <h1 class="text-title">Entrées</h1>
+    <!----contenu-------->
+    <div class="shop-content">
+
+
+
+        <!----entrées: box 1------>
+        <div class="product-box">
+            <img src="./photos/e1.jpg" alt="" class="product-img">
+            <h2 class="product-title">Oeuf poché en meurette</h2>
+            <span class="price">15€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!----box 2------>
+        <div class="product-box">
+            <img src="./photos/e2.jpg" alt="" class="product-img">
+            <h2 class="product-title">Sashimi de saumon aux olives</h2>
+            <span class="price">13.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!----box 3------>
+        <div class="product-box">
+            <img src="./photos/e3.jpg" alt="" class="product-img">
+            <h2 class="product-title">Calamar en chapelure de cacahuètes</h2>
+            <span class="price">12€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!----box 4------>
+        <div class="product-box">
+            <img src="./photos/e4.jpg" alt="" class="product-img">
+            <h2 class="product-title">Caviar d'aubergines fumées</h2>
+            <span class="price">19.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+    
+    </section>       
+
+
+
+          <!----plats :box 6------>
+    <section class="shop container">
+        <h1 class="text-title">Plats</h1>
+            <div class="shop-content">
+
+        <div class="product-box">
+            <img src="./photos/p1.jpg" alt="" class="product-img">
+            <h2 class="product-title">Saint-Jacques, mousseline de choux fleurs</h2>
+            <span class="price">29.99€</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+          <!----box 7------>
+        <div class="product-box">
+            <img src="./photos/p2.jpg" alt="" class="product-img">
+            <h2 class="product-title">Entrecôte Angus 280G, sauce au poivre, frites</h2>
+            <span class="price">40€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i></br>
+        </div>
+          <!----box 8------>
+        <div class="product-box">
+            <img src="./photos/p3.jpg" alt="" class="product-img">
+            <h2 class="product-title">Dos de bar, émulsion au lait d'amandes, haricots</h2>
+            <span class="price">29.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!----box 9------>
+          <div class="product-box">
+            <img src="./photos/p4.jpg" alt="" class="product-img">
+            <h2 class="product-title">Poulet, bouillon de curry jaune, chitake</h2>
+            <span class="price">25€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+       
+            </div>
+   </section>
+
+
+          <!---Desserts: box 11------>
+    <section class="shop container">
+        <h1 class="text-title">Desserts</h1>
+          <div class="shop-content">
+
+          <div class="product-box">
+            <img src="./photos/d1.jpg" alt="" class="product-img">
+            <h2 class="product-title">Millefeuille vanille, caramel & noix</h2>
+            <span class="price">11.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!----box 12------>
+          <div class="product-box">
+            <img src="./photos/d4.jpg" alt="" class="product-img">
+            <h2 class="product-title">Dôme chocolat caramel</h2>
+            <span class="price">13€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!----box 13------>
+          <div class="product-box">
+            <img src="./photos/d3.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tarte tatin, chantilly</h2>
+            <span class="price">14.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!-----box 14------>
+          <div class="product-box">
+            <img src="./photos/d2.jpg" alt="" class="product-img">
+            <h2 class="product-title">Dôme chocolat caramel</h2>
+            <span class="price">11€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+
+        </div>
+    </section>
+          
+
+
+          <!----Boissons : box 16------>
+        <section class="shop container">
+            <h1 class="text-title">Boissons :</h1>
+                <div class="shop-content">
+
+        <div class="product-box">
+            <img src="./photos/b1.jpg" alt="" class="product-img">
+            <h2 class="product-title">Coca-Cola</h2>
+            <span class="price">3.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+      
+          <!-----box 17------>
+        <div class="product-box">
+            <img src="./photos/b3.jpg" alt="" class="product-img">
+            <h2 class="product-title">San Pellegrino citron</h2>
+            <span class="price">3.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!-----box 18------>
+        <div class="product-box">
+            <img src="./photos/b4.jpg" alt="" class="product-img">
+            <h2 class="product-title">Pago Ananas</h2>
+            <span class="price">3.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!-----box 19------>
+        <div class="product-box">
+            <img src="./photos/b2.jpg" alt="" class="product-img">
+            <h2 class="product-title">Bière</h2>
+            <span class="price">3.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!-----box 20------>
+        <div class="product-box">
+            <img src="./photos/b5.jpg" alt="" class="product-img">
+            <h2 class="product-title">Eau gazeuse San Pellegrino</h2>
+            <span class="price">4.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!-----box 21------>
+        <div class="product-box">
+            <img src="./photos/b6.jpg" alt="" class="product-img">
+            <h2 class="product-title">Vin rouge L'excellence de Saint-Laurent</h2>
+            <span class="price">35€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!-----box 22------>
+        <div class="product-box">
+            <img src="./photos/b8.jpg" alt="" class="product-img">
+            <h2 class="product-title">Champagne Pommery Brut Royal</h2>
+            <span class="price">39.99€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+          <!-----box 23------>
+        <div class="product-box">
+            <img src="./photos/b9.jpg" alt="" class="product-img">
+            <h2 class="product-title">Champagne Pommery Brut Rosé Royal</h2>
+            <span class="price">40€</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+
+        </div>
+    </section>
+
+
+    </div>
+</section>
+
+<!-----------BAS DE PAGE------------->
+
+
+<footer>
+    <div class="container wrap">
+        <div class="row">
+             
+                <!--------PAGES----------->
+                
+              <div class="column">
+                <div class="footer-widget pages-widget">
+                    <h2 class="widget-title">Pages</h2>
+                
+                    <li><a href="#">A propos de nous</a></li>
+                    <li><a href="#">Le restaurant</a></li>
+                    <li><a href="#">L'histoire</a></li>
+                    <li><a href="#">Photothèque</a></li>
+                    <li><a href="#">Presse</a></li>
+                
+                </div>
+              </div> 
+
+                <!-----INFORMATIONS------->
+              <div class="column">
+                <div class="footer-widget Informations-widget">
+                    <h2 class="widget-title">Informations</h2>
+                
+                    <li><a href="#">Livraison</a></li>
+                    <li><a href="#">Statut de la commande</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Options de paiement</a></li>
+                    <li><a href="#">Termes & Conditions</a></li>
+                    <li><a href="#">Formulaire de contact</a></li>
+                 
+                </div>
+
+            </div>
+                <!-------CONTACT------->
+            <div class="column">
+                <div class="footer-widget">
+                <h2 class="widget-title">Contact</h2>
+
+                <div class="contact-adress">
+                    <i class="bi bi-geo-alt-fill"></i> Adresse : Île des Ibis, 78110 Le Vésinet
+                </div>
+                
+                <div class="contact-number">
+                    <i class="bi bi-telephone-fill"></i> Téléphone : 01 85 39 10 14
+                </div>
+
+                <div class="contact-email">
+                    <i class="bi bi-envelope-at-fill"></i> Email : contact@pavillondesibis.com
+                </div>
+
+                <div class="social-widget">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-snapchat"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></i></a>
+                </div>
+
+            
+                <div class="footer-widget buy-widget">
+                
+                <p><span><i class='bx bxs-lock-alt'></i></span> Paiement sécurisé</p>
+                <div class="cards">
+                    <i class='bx bxl-mastercard'></i>
+                    <i class='bx bxl-paypal'></i>
+                    <i class='bx bxl-visa'></i>
+                </div>
+
+                </div>
+                
+                </div>
+            </div>
+        </div>
+   
+    </div>
+
+
+    <!--------COPYRIGHT--------------
+<div class="copyright">
+    <p>Copyright <i class="bi bi-c-circle"></i> 2022 Tous droits réservés</p>
+</div>
+-->
+</footer>        
+            
+
+
+<!------Lien JAVASCRIPT------->
+<script src="./java3.js"></script>
+
+</body>
+</html>
